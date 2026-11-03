@@ -1,8 +1,9 @@
 /**
  * Undangan Digital Metatah (Mepandes) Khas Bali - Aesthetic Mobile Edition
  * Client Data: Banjar Pidpid Kaler Dauh Margi
- * 6 Peserta: Wahyu Sawitri, Triwikrama Wahyu Pusar Buana, Maha Yagi,
- * Ni Kadek Vina Ganaki Uma Prasada Nalini, I Kadek Dharma Negara, I Kadek Agus Budi Darma Tatar
+ * 8 Peserta: Wahyu Sawitri, Triwikrama Wahyu Pusar Buana, Maha Yagi,
+ * Ni Kadek Vina Ganaki Uma Prasada Nalini, I Kadek Dharma Negara, I Kadek Agus Budi Darma Tatar,
+ * I Ketut Jaya Artadi, Ni Nyoman Ayu Padmani Kumara Triadi
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -36,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const musicIcon = document.getElementById('music-icon');
   const bottomNavbar = document.getElementById('bottom-navbar');
   const rsvpForm = document.getElementById('rsvp-form');
-  const guestbookList = document.getElementById('guestbook-list');
+  // guestbook list resolved dynamically in renderGuestbook()
   const toast = document.getElementById('copy-toast');
   const toastMessage = document.getElementById('toast-message');
 
@@ -366,6 +367,7 @@ Keluarga Besar Sang Mepandes`;
   }
 
   function renderGuestbook() {
+    const guestbookList = document.getElementById('ucapan-list') || document.getElementById('guestbook-list');
     if (!guestbookList) return;
     const entries = getGuestbookEntries();
     guestbookList.innerHTML = entries.map(item => `
@@ -395,6 +397,29 @@ Keluarga Besar Sang Mepandes`;
     `).join('');
   }
   renderGuestbook();
+
+  // ==========================================
+  // SUBMIT UCAPAN (global, dipanggil dari form)
+  // ==========================================
+  window.submitUcapan = function(e) {
+    e.preventDefault();
+    const nama = document.getElementById('ucapan-nama')?.value.trim();
+    const pesan = document.getElementById('ucapan-pesan')?.value.trim();
+    const kehadiran = document.querySelector('input[name="kehadiran"]:checked')?.value;
+
+    if (!nama || !pesan || !kehadiran) return;
+
+    const entry = {
+      name: nama,
+      status: kehadiran === 'hadir' ? 'Hadir' : 'Tidak Hadir',
+      message: pesan,
+      date: new Date().toLocaleDateString('id-ID', { day: 'numeric', month: 'long', year: 'numeric' })
+    };
+
+    saveGuestbookEntry(entry);
+    document.getElementById('ucapan-form').reset();
+    showToast('Ucapan berhasil terkirim 🙏', 'success');
+  };
 
   function escapeHTML(str) {
     if (!str) return '';

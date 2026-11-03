@@ -8,9 +8,19 @@
   <meta name="keywords" content="Undangan Metatah Bali, Mepandes, Banjar Pidpid Kaler Dauh Margi, Manusa Yadnya">
 
   <!-- OpenGraph Meta Tags for WhatsApp Preview -->
-  <meta property="og:title" content="Undangan Upacara Metatah (Mepandes) - Banjar Pidpid Kaler Dauh Margi">
-  <meta property="og:description" content="Om Swastiastu. Kami mengundang Bapak/Ibu/Saudara/i untuk menghadiri Upacara Metatah (Mepandes) putra-putri kami pada Minggu, 15 November 2026.">
   <meta property="og:type" content="website">
+  <meta property="og:title" content="Undangan Upacara Metatah (Mepandes) - Banjar Pidpid Kaler Dauh Margi">
+  <meta property="og:description" content="Om Swastiastu. Kami mengundang Bapak/Ibu/Saudara/i untuk menghadiri Upacara Metatah (Mepandes) pada Minggu, 15 November 2026.">
+  <meta property="og:image" content="assets/og-image.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="675">
+
+  <!-- Twitter / Telegram Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Undangan Upacara Metatah (Mepandes) - Banjar Pidpid Kaler Dauh Margi">
+  <meta name="twitter:description" content="Om Swastiastu. Kami mengundang Bapak/Ibu/Saudara/i untuk menghadiri Upacara Metatah (Mepandes) pada Minggu, 15 November 2026.">
+  <meta name="twitter:image" content="assets/og-image.jpg">
 
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -210,21 +220,21 @@
           <i class="fa-solid fa-house text-xs"></i>
           <span class="text-[8px] font-sans mt-0.5 tracking-wider">Awal</span>
         </a>
-        <a href="#profile-section" class="nav-item flex flex-col items-center text-espresso-muted hover:text-champagne-700 transition-colors py-0.5">
-          <i class="fa-solid fa-user-group text-xs"></i>
-          <span class="text-[8px] font-sans mt-0.5 tracking-wider">Peserta</span>
+        <a href="#opening-section" class="nav-item flex flex-col items-center text-espresso-muted hover:text-champagne-700 transition-colors py-0.5">
+          <i class="fa-solid fa-om text-xs"></i>
+          <span class="text-[8px] font-sans mt-0.5 tracking-wider">Sloka</span>
         </a>
         <a href="#event-section" class="nav-item flex flex-col items-center text-espresso-muted hover:text-champagne-700 transition-colors py-0.5">
           <i class="fa-solid fa-calendar-day text-xs"></i>
           <span class="text-[8px] font-sans mt-0.5 tracking-wider">Acara</span>
         </a>
         <a href="#rsvp-section" class="nav-item flex flex-col items-center text-espresso-muted hover:text-champagne-700 transition-colors py-0.5">
-          <i class="fa-solid fa-envelope-open text-xs"></i>
-          <span class="text-[8px] font-sans mt-0.5 tracking-wider">RSVP</span>
+          <i class="fa-solid fa-comment-dots text-xs"></i>
+          <span class="text-[8px] font-sans mt-0.5 tracking-wider">Ucapan</span>
         </a>
-        <a href="#gift-section" class="nav-item flex flex-col items-center text-espresso-muted hover:text-champagne-700 transition-colors py-0.5">
-          <i class="fa-solid fa-gift text-xs"></i>
-          <span class="text-[8px] font-sans mt-0.5 tracking-wider">Hadiah</span>
+        <a href="#closing-section" class="nav-item flex flex-col items-center text-espresso-muted hover:text-champagne-700 transition-colors py-0.5">
+          <i class="fa-solid fa-hands-praying text-xs"></i>
+          <span class="text-[8px] font-sans mt-0.5 tracking-wider">Penutup</span>
         </a>
       </nav>
 
@@ -264,22 +274,11 @@
             </div>
           </div>
 
-          <!-- Middle: 6 Peserta Metatah -->
-          <div class="py-1 w-full max-w-sm px-2">
-            <span class="text-[9px] uppercase tracking-widest text-champagne-600 font-cinzel block mb-1.5 font-medium">
-              Yang Memprosesi (Metatah):
-            </span>
-            <div class="space-y-1 text-espresso-title font-editorial font-bold text-sm leading-tight">
-              <p class="text-soft-bronze hover:scale-105 transition-transform duration-300">Wahyu Sawitri</p>
-              <p class="text-soft-bronze hover:scale-105 transition-transform duration-300">Triwikrama Wahyu Pusar Buana</p>
-              <p class="text-soft-bronze hover:scale-105 transition-transform duration-300">Maha Yagi</p>
-              <p class="text-soft-bronze hover:scale-105 transition-transform duration-300">Ni Kadek Vina Ganaki Uma Prasada Nalini</p>
-              <p class="text-soft-bronze hover:scale-105 transition-transform duration-300">I Kadek Dharma Negara</p>
-              <p class="text-soft-bronze hover:scale-105 transition-transform duration-300">I Kadek Agus Budi Darma Tatar</p>
-            </div>
-            <p class="text-[10px] text-espresso-muted font-sans mt-2">
-              <i class="fa-solid fa-location-dot text-champagne-500 mr-1"></i> Banjar Pidpid Kaler Dauh Margi
-            </p>
+          <!-- Middle: Ornamen Cover -->
+          <div class="my-auto py-1 w-full max-w-[330px] px-2 flex justify-center items-center">
+            <img src="assets/ornament-cover-center.png"
+                 alt="Ornamen Bali"
+                 class="w-full max-h-[175px] object-contain drop-shadow-sm pointer-events-none" />
           </div>
 
           <!-- Bottom: Guest Card & Button -->
@@ -347,7 +346,7 @@
               <svg viewBox="0 0 200 30" class="w-full h-auto"><use href="#ornament-patra-divider" /></svg>
             </div>
 
-            <!-- 6 Peserta Metatah Highlight Box -->
+            <!-- 8 Peserta Metatah Highlight Box -->
             <div class="reveal-flip delay-75 glass-aesthetic-card p-4 rounded-2xl border border-champagne-300/60 shadow-2xs relative overflow-hidden">
               <svg class="ornament-corner ornament-tl !w-8 !h-8 !top-1 !left-1 opacity-50" viewBox="0 0 60 60"><use href="#ornament-corner-aesthetic" /></svg>
               <svg class="ornament-corner ornament-tr !w-8 !h-8 !top-1 !right-1 opacity-50" viewBox="0 0 60 60"><use href="#ornament-corner-aesthetic" /></svg>
@@ -362,6 +361,8 @@
                 <p>Ni Kadek Vina Ganaki Uma Prasada Nalini</p>
                 <p>I Kadek Dharma Negara</p>
                 <p>I Kadek Agus Budi Darma Tatar</p>
+                <p>I Ketut Jaya Artadi</p>
+                <p>Ni Nyoman Ayu Padmani Kumara Triadi</p>
               </div>
               <p class="text-[10px] text-espresso-muted font-sans mt-3 pt-2 border-t border-champagne-200">
                 <i class="fa-solid fa-location-dot text-champagne-600 mr-1"></i> Banjar Pidpid Kaler Dauh Margi
@@ -479,129 +480,6 @@
 
           </div>
         </section>
-
-        <!-- DIVIDER FLORAL -->
-        <div class="section-divider"><img src="assets/divider-floral.png" alt="" aria-hidden="true"></div>
-
-        <!-- ===============================================================
-             SECTION 3: PROFIL 6 PESERTA METATAH
-             =============================================================== -->
-        <section id="profile-section" class="reveal-up relative pt-8 pb-2 px-4 bg-ivory-warm overflow-hidden">
-          <!-- Ornamen Sudut Floral -->
-          <img src="assets/ornament-corner-floral.png" class="floral-corner floral-tl" alt="" aria-hidden="true">
-          <img src="assets/ornament-corner-floral.png" class="floral-corner floral-tr" alt="" aria-hidden="true">
-          <img src="assets/ornament-corner-floral.png" class="floral-corner floral-bl" alt="" aria-hidden="true">
-          <img src="assets/ornament-corner-floral.png" class="floral-corner floral-br" alt="" aria-hidden="true">
-
-          <div class="w-full max-w-sm mx-auto text-center relative z-10">
-            
-            <div class="reveal-up mb-6">
-              <span class="text-[9px] font-cinzel tracking-[0.3em] text-champagne-600 uppercase">
-                Profil Sang Mepandes
-              </span>
-              <h2 class="text-2xl font-editorial font-bold text-soft-bronze mt-0.5 mb-1">
-                Peserta Upacara
-              </h2>
-              <div class="w-12 h-px mx-auto bg-champagne-300 my-2"></div>
-              <p class="text-[11px] text-espresso-muted font-sans">
-                Putra dan putri yang melangkah menuju kedewasaan jasmani & rohani
-              </p>
-            </div>
-
-            <!-- GRID 6 PESERTA METATAH WITH STAGGER ANIMATIONS -->
-            <div class="grid grid-cols-2 gap-3">
-              
-              <!-- 1. Wahyu Sawitri -->
-              <div class="reveal-left delay-75 glass-aesthetic-card p-3 rounded-2xl border border-champagne-300/50 flex flex-col items-center text-center shadow-2xs">
-                <div class="w-24 h-28 mb-2 balinese-photo-frame">
-                  <div class="w-full h-full balinese-photo-inner relative flex items-center justify-center bg-gradient-to-b from-champagne-100 to-ivory-sand">
-                    <div class="w-11 h-11 rounded-full bg-champagne-200 border border-champagne-300 flex items-center justify-center">
-                      <i class="fa-solid fa-crown text-base text-champagne-700"></i>
-                    </div>
-                  </div>
-                </div>
-                <span class="text-[8px] font-cinzel uppercase tracking-widest text-champagne-700 bg-champagne-100 px-2 py-0.5 rounded-full mb-1">Peserta 1</span>
-                <h4 class="text-sm font-editorial font-bold text-soft-bronze leading-tight">Wahyu Sawitri</h4>
-                <p class="text-[9px] text-espresso-muted mt-1 font-sans">Banjar Pidpid Kaler</p>
-              </div>
-
-              <!-- 2. Triwikrama Wahyu Pusar Buana -->
-              <div class="reveal-right delay-75 glass-aesthetic-card p-3 rounded-2xl border border-champagne-300/50 flex flex-col items-center text-center shadow-2xs">
-                <div class="w-24 h-28 mb-2 balinese-photo-frame">
-                  <div class="w-full h-full balinese-photo-inner relative flex items-center justify-center bg-gradient-to-b from-champagne-100 to-ivory-sand">
-                    <div class="w-11 h-11 rounded-full bg-champagne-200 border border-champagne-300 flex items-center justify-center">
-                      <i class="fa-solid fa-user-tie text-base text-champagne-700"></i>
-                    </div>
-                  </div>
-                </div>
-                <span class="text-[8px] font-cinzel uppercase tracking-widest text-champagne-700 bg-champagne-100 px-2 py-0.5 rounded-full mb-1">Peserta 2</span>
-                <h4 class="text-sm font-editorial font-bold text-soft-bronze leading-tight">Triwikrama Wahyu Pusar Buana</h4>
-                <p class="text-[9px] text-espresso-muted mt-1 font-sans">Banjar Pidpid Kaler</p>
-              </div>
-
-              <!-- 3. Maha Yagi -->
-              <div class="reveal-left delay-150 glass-aesthetic-card p-3 rounded-2xl border border-champagne-300/50 flex flex-col items-center text-center shadow-2xs">
-                <div class="w-24 h-28 mb-2 balinese-photo-frame">
-                  <div class="w-full h-full balinese-photo-inner relative flex items-center justify-center bg-gradient-to-b from-champagne-100 to-ivory-sand">
-                    <div class="w-11 h-11 rounded-full bg-champagne-200 border border-champagne-300 flex items-center justify-center">
-                      <i class="fa-solid fa-user-tie text-base text-champagne-700"></i>
-                    </div>
-                  </div>
-                </div>
-                <span class="text-[8px] font-cinzel uppercase tracking-widest text-champagne-700 bg-champagne-100 px-2 py-0.5 rounded-full mb-1">Peserta 3</span>
-                <h4 class="text-sm font-editorial font-bold text-soft-bronze leading-tight">Maha Yagi</h4>
-                <p class="text-[9px] text-espresso-muted mt-1 font-sans">Banjar Pidpid Kaler</p>
-              </div>
-
-              <!-- 4. Ni Kadek Vina Ganaki Uma Prasada Nalini -->
-              <div class="reveal-right delay-150 glass-aesthetic-card p-3 rounded-2xl border border-champagne-300/50 flex flex-col items-center text-center shadow-2xs">
-                <div class="w-24 h-28 mb-2 balinese-photo-frame">
-                  <div class="w-full h-full balinese-photo-inner relative flex items-center justify-center bg-gradient-to-b from-champagne-100 to-ivory-sand">
-                    <div class="w-11 h-11 rounded-full bg-champagne-200 border border-champagne-300 flex items-center justify-center">
-                      <i class="fa-solid fa-crown text-base text-champagne-700"></i>
-                    </div>
-                  </div>
-                </div>
-                <span class="text-[8px] font-cinzel uppercase tracking-widest text-champagne-700 bg-champagne-100 px-2 py-0.5 rounded-full mb-1">Peserta 4</span>
-                <h4 class="text-sm font-editorial font-bold text-soft-bronze leading-tight">Ni Kadek Vina Ganaki</h4>
-                <p class="text-[9px] text-espresso-muted mt-1 font-sans">Uma Prasada Nalini</p>
-              </div>
-
-              <!-- 5. I Kadek Dharma Negara -->
-              <div class="reveal-left delay-225 glass-aesthetic-card p-3 rounded-2xl border border-champagne-300/50 flex flex-col items-center text-center shadow-2xs">
-                <div class="w-24 h-28 mb-2 balinese-photo-frame">
-                  <div class="w-full h-full balinese-photo-inner relative flex items-center justify-center bg-gradient-to-b from-champagne-100 to-ivory-sand">
-                    <div class="w-11 h-11 rounded-full bg-champagne-200 border border-champagne-300 flex items-center justify-center">
-                      <i class="fa-solid fa-user-tie text-base text-champagne-700"></i>
-                    </div>
-                  </div>
-                </div>
-                <span class="text-[8px] font-cinzel uppercase tracking-widest text-champagne-700 bg-champagne-100 px-2 py-0.5 rounded-full mb-1">Peserta 5</span>
-                <h4 class="text-sm font-editorial font-bold text-soft-bronze leading-tight">I Kadek Dharma Negara</h4>
-                <p class="text-[9px] text-espresso-muted mt-1 font-sans">Banjar Pidpid Kaler</p>
-              </div>
-
-              <!-- 6. I Kadek Agus Budi Darma Tatar -->
-              <div class="reveal-right delay-225 glass-aesthetic-card p-3 rounded-2xl border border-champagne-300/50 flex flex-col items-center text-center shadow-2xs">
-                <div class="w-24 h-28 mb-2 balinese-photo-frame">
-                  <div class="w-full h-full balinese-photo-inner relative flex items-center justify-center bg-gradient-to-b from-champagne-100 to-ivory-sand">
-                    <div class="w-11 h-11 rounded-full bg-champagne-200 border border-champagne-300 flex items-center justify-center">
-                      <i class="fa-solid fa-user-tie text-base text-champagne-700"></i>
-                    </div>
-                  </div>
-                </div>
-                <span class="text-[8px] font-cinzel uppercase tracking-widest text-champagne-700 bg-champagne-100 px-2 py-0.5 rounded-full mb-1">Peserta 6</span>
-                <h4 class="text-sm font-editorial font-bold text-soft-bronze leading-tight">I Kadek Agus Budi Darma Tatar</h4>
-                <p class="text-[9px] text-espresso-muted mt-1 font-sans">Banjar Pidpid Kaler</p>
-              </div>
-
-            </div>
-
-          </div>
-        </section>
-
-        <!-- DIVIDER FLORAL -->
-        <div class="section-divider"><img src="assets/divider-floral.png" alt="" aria-hidden="true"></div>
 
         <!-- ===============================================================
              SECTION 4: DETAIL ACARA, COUNTDOWN & LOKASI
@@ -736,58 +614,7 @@
         <div class="section-divider"><img src="assets/divider-floral.png" alt="" aria-hidden="true"></div>
 
         <!-- ===============================================================
-             SECTION 5: GALERI KENANGAN
-             =============================================================== -->
-        <section id="gallery-section" class="reveal-up relative pt-8 pb-2 px-4 bg-ivory-warm overflow-hidden">
-          <!-- Ornamen Sudut Floral -->
-          <img src="assets/ornament-corner-floral.png" class="floral-corner floral-tl" alt="" aria-hidden="true">
-          <img src="assets/ornament-corner-floral.png" class="floral-corner floral-tr" alt="" aria-hidden="true">
-          <img src="assets/ornament-corner-floral.png" class="floral-corner floral-bl" alt="" aria-hidden="true">
-          <img src="assets/ornament-corner-floral.png" class="floral-corner floral-br" alt="" aria-hidden="true">
-
-          <div class="w-full max-w-sm mx-auto text-center relative z-10">
-            
-            <div class="reveal-up mb-6">
-              <span class="text-[9px] font-cinzel tracking-[0.3em] text-champagne-600 uppercase">
-                Momen Bersejarah
-              </span>
-              <h2 class="text-2xl font-editorial font-bold text-soft-bronze mt-0.5 mb-1">
-                Galeri Kenangan
-              </h2>
-              <div class="w-12 h-px mx-auto bg-champagne-300 my-2"></div>
-            </div>
-
-            <div class="grid grid-cols-2 gap-2.5">
-              <div class="reveal-left delay-75 aspect-[3/4] rounded-xl overflow-hidden border border-champagne-200 bg-white/80 flex flex-col items-center justify-center p-3 text-center shadow-2xs hover:-translate-y-1 hover:border-champagne-400 transition-all">
-                <i class="fa-solid fa-camera-retro text-champagne-700 text-base mb-1"></i>
-                <span class="text-xs font-editorial font-bold text-espresso-title">Foto Bersama</span>
-                <span class="text-[9px] text-espresso-muted">[ Placeholder 1 ]</span>
-              </div>
-              <div class="reveal-right delay-75 aspect-[3/4] rounded-xl border border-champagne-200 bg-white/80 flex flex-col items-center justify-center p-3 text-center shadow-2xs hover:-translate-y-1 hover:border-champagne-400 transition-all">
-                <i class="fa-solid fa-hands-praying text-champagne-700 text-base mb-1"></i>
-                <span class="text-xs font-editorial font-bold text-espresso-title">Nunas Tirtha</span>
-                <span class="text-[9px] text-espresso-muted">[ Placeholder 2 ]</span>
-              </div>
-              <div class="reveal-left delay-150 aspect-[3/4] rounded-xl border border-champagne-200 bg-white/80 flex flex-col items-center justify-center p-3 text-center shadow-2xs hover:-translate-y-1 hover:border-champagne-400 transition-all">
-                <i class="fa-solid fa-sun text-champagne-700 text-base mb-1"></i>
-                <span class="text-xs font-editorial font-bold text-espresso-title">Upakara</span>
-                <span class="text-[9px] text-espresso-muted">[ Placeholder 3 ]</span>
-              </div>
-              <div class="reveal-right delay-150 aspect-[3/4] rounded-xl border border-champagne-200 bg-white/80 flex flex-col items-center justify-center p-3 text-center shadow-2xs hover:-translate-y-1 hover:border-champagne-400 transition-all">
-                <i class="fa-solid fa-award text-champagne-700 text-base mb-1"></i>
-                <span class="text-xs font-editorial font-bold text-espresso-title">Mejaya-jaya</span>
-                <span class="text-[9px] text-espresso-muted">[ Placeholder 4 ]</span>
-              </div>
-            </div>
-
-          </div>
-        </section>
-
-        <!-- DIVIDER FLORAL -->
-        <div class="section-divider"><img src="assets/divider-floral.png" alt="" aria-hidden="true"></div>
-
-        <!-- ===============================================================
-             SECTION 6: RSVP & BUKU UCAPAN (VIA WHATSAPP)
+             SECTION 6: UCAPAN & KEHADIRAN
              =============================================================== -->
         <section id="rsvp-section" class="reveal-up relative pt-8 pb-2 px-4 bg-ivory-warm overflow-hidden">
           <!-- Ornamen Sudut Floral -->
@@ -797,176 +624,42 @@
           <img src="assets/ornament-corner-floral.png" class="floral-corner floral-br" alt="" aria-hidden="true">
 
           <div class="w-full max-w-sm mx-auto relative z-10">
-            
-            <div class="reveal-up text-center mb-6">
-              <span class="text-[9px] font-cinzel tracking-[0.3em] text-champagne-600 uppercase">
-                Konfirmasi Kehadiran
-              </span>
-              <h2 class="text-2xl font-editorial font-bold text-soft-bronze mt-0.5 mb-1">
-                RSVP & Doa Restu
-              </h2>
+
+            <div class="reveal-up mb-5 text-center">
+              <span class="text-[9px] font-cinzel tracking-[0.3em] text-champagne-600 uppercase">Sampaikan</span>
+              <h2 class="text-2xl font-editorial font-bold text-soft-bronze mt-0.5 mb-1">Ucapan & Kehadiran</h2>
               <div class="w-12 h-px mx-auto bg-champagne-300 my-2"></div>
             </div>
 
-            <!-- FORM RSVP DENGAN ORNAMEN SUDUT -->
-            <div class="reveal-flip delay-75 glass-aesthetic-card p-4 rounded-2xl border border-champagne-300/60 shadow-xs mb-6 relative">
-              <svg class="ornament-corner ornament-tl !w-8 !h-8 !top-1 !left-1 opacity-50" viewBox="0 0 60 60"><use href="#ornament-corner-aesthetic" /></svg>
-              <svg class="ornament-corner ornament-tr !w-8 !h-8 !top-1 !right-1 opacity-50" viewBox="0 0 60 60"><use href="#ornament-corner-aesthetic" /></svg>
+            <!-- FORM -->
+            <form id="ucapan-form" onsubmit="submitUcapan(event)" class="reveal-up space-y-3">
+              <input type="text" id="ucapan-nama" placeholder="Nama Anda" required
+                class="w-full px-4 py-2.5 rounded-xl border border-champagne-300 bg-white/80 text-[12px] font-sans text-espresso-title placeholder-champagne-400 focus:outline-none focus:border-champagne-500 transition-all">
 
-              <form id="rsvp-form" class="space-y-3">
-                <div>
-                  <label for="rsvp-name" class="block text-[11px] font-cinzel font-semibold text-espresso-title mb-1">
-                    Nama Lengkap *
-                  </label>
-                  <input type="text" 
-                         id="rsvp-name" 
-                         name="name" 
-                         required 
-                         placeholder="Contoh: I Ketut Sukadana" 
-                         class="w-full px-3 py-2 rounded-xl bg-white/90 border border-champagne-300 text-espresso-title text-xs focus:border-champagne-500 outline-none transition-all">
-                </div>
-
-                <div>
-                  <label for="rsvp-guests" class="block text-[11px] font-cinzel font-semibold text-espresso-title mb-1">
-                    Jumlah Tamu *
-                  </label>
-                  <select id="rsvp-guests" 
-                          name="guests" 
-                          class="w-full px-3 py-2 rounded-xl bg-white/90 border border-champagne-300 text-espresso-title text-xs focus:border-champagne-500 outline-none transition-all">
-                    <option value="1">1 Orang</option>
-                    <option value="2" selected>2 Orang</option>
-                    <option value="3">3 Orang</option>
-                    <option value="4+">4+ Orang (Rombongan)</option>
-                  </select>
-                </div>
-
-                <div>
-                  <label class="block text-[11px] font-cinzel font-semibold text-espresso-title mb-1">
-                    Kehadiran *
-                  </label>
-                  <div class="grid grid-cols-3 gap-1.5">
-                    <label class="cursor-pointer">
-                      <input type="radio" name="attendance" value="Hadir dengan Senang Hati" checked class="peer sr-only">
-                      <div class="py-2 px-1 rounded-lg border border-champagne-300 bg-white/90 text-center peer-checked:bg-champagne-btn peer-checked:text-white peer-checked:font-semibold text-[10px] text-espresso-body transition-all">
-                        Hadir
-                      </div>
-                    </label>
-                    <label class="cursor-pointer">
-                      <input type="radio" name="attendance" value="Masih Ragu / Menyesuaikan" class="peer sr-only">
-                      <div class="py-2 px-1 rounded-lg border border-champagne-300 bg-white/90 text-center peer-checked:bg-champagne-btn peer-checked:text-white peer-checked:font-semibold text-[10px] text-espresso-body transition-all">
-                        Ragu
-                      </div>
-                    </label>
-                    <label class="cursor-pointer">
-                      <input type="radio" name="attendance" value="Maaf, Tidak Dapat Hadir" class="peer sr-only">
-                      <div class="py-2 px-1 rounded-lg border border-champagne-300 bg-white/90 text-center peer-checked:bg-champagne-btn peer-checked:text-white peer-checked:font-semibold text-[10px] text-espresso-body transition-all">
-                        Tidak Hadir
-                      </div>
-                    </label>
-                  </div>
-                </div>
-
-                <div>
-                  <label for="rsvp-message" class="block text-[11px] font-cinzel font-semibold text-espresso-title mb-1">
-                    Ucapan & Doa Restu
-                  </label>
-                  <textarea id="rsvp-message" 
-                            name="message" 
-                            rows="2" 
-                            placeholder="Tuliskan ucapan dan doa restu..." 
-                            class="w-full px-3 py-2 rounded-xl bg-white/90 border border-champagne-300 text-espresso-title text-xs focus:border-champagne-500 outline-none transition-all"></textarea>
-                </div>
-
-                <button type="submit" 
-                        class="btn-shimmer w-full py-2.5 rounded-xl bg-champagne-btn text-white font-cinzel font-semibold text-[11px] tracking-wider shadow-xs flex items-center justify-center gap-1.5">
-                  <i class="fa-brands fa-whatsapp text-sm"></i>
-                  <span>Kirim Konfirmasi via WhatsApp</span>
-                </button>
-              </form>
-            </div>
-
-            <!-- BUKU TAMU LIST -->
-            <div class="reveal-up delay-150 glass-aesthetic-card p-4 rounded-2xl border border-champagne-300/60 shadow-xs">
-              <div class="flex items-center justify-between mb-3 border-b border-champagne-200 pb-2">
-                <div class="flex items-center gap-1.5">
-                  <i class="fa-solid fa-comments text-champagne-700 text-xs"></i>
-                  <h4 class="font-cinzel font-bold text-xs text-espresso-title">Buku Ucapan</h4>
-                </div>
-                <span class="text-[9px] text-champagne-700 font-sans">Tamu Terdaftar</span>
-              </div>
-              <div id="guestbook-list" class="space-y-2 max-h-[280px] overflow-y-auto pr-1"></div>
-            </div>
-
-          </div>
-        </section>
-
-        <!-- DIVIDER FLORAL -->
-        <div class="section-divider"><img src="assets/divider-floral.png" alt="" aria-hidden="true"></div>
-
-        <!-- ===============================================================
-             SECTION 7: TANDA KASIH / AMPLOP DIGITAL
-             =============================================================== -->
-        <section id="gift-section" class="reveal-up relative pt-8 pb-2 px-4 bg-ivory-warm overflow-hidden">
-          <!-- Ornamen Sudut Floral -->
-          <img src="assets/ornament-corner-floral.png" class="floral-corner floral-tl" alt="" aria-hidden="true">
-          <img src="assets/ornament-corner-floral.png" class="floral-corner floral-tr" alt="" aria-hidden="true">
-          <img src="assets/ornament-corner-floral.png" class="floral-corner floral-bl" alt="" aria-hidden="true">
-          <img src="assets/ornament-corner-floral.png" class="floral-corner floral-br" alt="" aria-hidden="true">
-
-          <div class="w-full max-w-sm mx-auto text-center relative z-10">
-            
-            <div class="reveal-up mb-6">
-              <span class="text-[9px] font-cinzel tracking-[0.3em] text-champagne-600 uppercase">
-                Tanda Kasih
-              </span>
-              <h2 class="text-2xl font-editorial font-bold text-soft-bronze mt-0.5 mb-1">
-                Amplop Digital
-              </h2>
-              <div class="w-12 h-px mx-auto bg-champagne-300 my-2"></div>
-              <p class="text-[11px] text-espresso-muted font-sans">
-                Opsi tanda kasih secara digital untuk Sang Mepandes:
-              </p>
-            </div>
-
-            <div class="space-y-3">
-              <!-- REKENING 1 -->
-              <div class="reveal-left delay-75 glass-aesthetic-card p-4 rounded-2xl border border-champagne-300/60 text-left shadow-2xs hover:-translate-y-1 transition-all">
-                <div class="flex items-center justify-between mb-1.5">
-                  <span class="text-[10px] font-cinzel font-bold text-champagne-700 uppercase">Bank BCA</span>
-                  <i class="fa-solid fa-credit-card text-champagne-500 text-xs"></i>
-                </div>
-                <p class="text-[9px] text-espresso-muted mb-0.5">Nomor Rekening:</p>
-                <p class="text-base font-mono font-bold text-espresso-title tracking-wider mb-0.5">
-                  7720 1234 56
-                </p>
-                <p class="text-[10px] text-champagne-800 font-sans mb-2.5">a.n. Panitia Metatah</p>
-                <button onclick="copyToClipboard('7720123456', 'Nomor rekening BCA')" 
-                        type="button" 
-                        class="w-full py-1.5 rounded-lg bg-white border border-champagne-300 text-champagne-800 font-cinzel font-semibold text-[10px] tracking-wider hover:bg-champagne-50 transition-all flex items-center justify-center gap-1.5 shadow-2xs">
-                  <i class="fa-regular fa-copy text-xs"></i>
-                  <span>Salin No. Rekening</span>
-                </button>
+              <!-- Kehadiran -->
+              <div class="flex gap-2">
+                <label class="flex-1 flex items-center justify-center gap-1.5 py-2 rounded-xl border border-champagne-300 bg-white/80 cursor-pointer text-[11px] font-cinzel text-champagne-700 hover:bg-champagne-50 transition-all has-[:checked]:bg-champagne-100 has-[:checked]:border-champagne-500">
+                  <input type="radio" name="kehadiran" value="hadir" class="hidden" required>
+                  <i class="fa-solid fa-circle-check text-xs"></i> Hadir
+                </label>
+                <label class="flex-1 flex items-center justify-center gap-1.5 py-2 rounded-xl border border-champagne-300 bg-white/80 cursor-pointer text-[11px] font-cinzel text-champagne-700 hover:bg-champagne-50 transition-all has-[:checked]:bg-champagne-100 has-[:checked]:border-champagne-500">
+                  <input type="radio" name="kehadiran" value="tidak" class="hidden">
+                  <i class="fa-solid fa-circle-xmark text-xs"></i> Tidak Hadir
+                </label>
               </div>
 
-              <!-- REKENING 2 -->
-              <div class="reveal-right delay-150 glass-aesthetic-card p-4 rounded-2xl border border-champagne-300/60 text-left shadow-2xs hover:-translate-y-1 transition-all">
-                <div class="flex items-center justify-between mb-1.5">
-                  <span class="text-[10px] font-cinzel font-bold text-champagne-700 uppercase">Bank BPD Bali</span>
-                  <i class="fa-solid fa-building-columns text-champagne-500 text-xs"></i>
-                </div>
-                <p class="text-[9px] text-espresso-muted mb-0.5">Nomor Rekening:</p>
-                <p class="text-base font-mono font-bold text-espresso-title tracking-wider mb-0.5">
-                  0100 2345 6789
-                </p>
-                <p class="text-[10px] text-champagne-800 font-sans mb-2.5">a.n. Panitia Metatah</p>
-                <button onclick="copyToClipboard('010023456789', 'Nomor rekening BPD Bali')" 
-                        type="button" 
-                        class="w-full py-1.5 rounded-lg bg-white border border-champagne-300 text-champagne-800 font-cinzel font-semibold text-[10px] tracking-wider hover:bg-champagne-50 transition-all flex items-center justify-center gap-1.5 shadow-2xs">
-                  <i class="fa-regular fa-copy text-xs"></i>
-                  <span>Salin No. Rekening</span>
-                </button>
-              </div>
-            </div>
+              <textarea id="ucapan-pesan" placeholder="Tuliskan ucapan dan doa restu..." rows="3" required
+                class="w-full px-4 py-2.5 rounded-xl border border-champagne-300 bg-white/80 text-[12px] font-sans text-espresso-title placeholder-champagne-400 focus:outline-none focus:border-champagne-500 transition-all resize-none"></textarea>
+
+              <button type="submit"
+                class="w-full py-2.5 rounded-xl bg-champagne-700 text-white font-cinzel font-semibold text-[11px] tracking-wider hover:bg-champagne-800 active:scale-95 transition-all shadow-md flex items-center justify-center gap-2">
+                <i class="fa-solid fa-paper-plane text-xs"></i>
+                Kirim Ucapan
+              </button>
+            </form>
+
+            <!-- DAFTAR UCAPAN -->
+            <div id="ucapan-list" class="mt-5 space-y-3"></div>
 
           </div>
         </section>
